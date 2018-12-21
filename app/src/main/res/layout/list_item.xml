@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_weight="0"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="time"
+        android:textAlignment="center"
+        android:textColor="#ff000000" />
+
+    <ImageView
+        android:id="@+id/ivIconWeather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:adjustViewBounds="true"
+        android:maxHeight="45dp"
+        android:maxWidth="70dp"
+        android:src="@drawable/empty" />
+
+    <TextView
+        android:id="@+id/tvTempDay"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="tempDay"
+        android:textAlignment="center"
+        android:textColor="#ff000000" />
+
+    <TextView
+        android:id="@+id/tvTempNight"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="tempNight"
+        android:textAlignment="center"
+        android:textColor="#ff000000" />
+
+</LinearLayout>

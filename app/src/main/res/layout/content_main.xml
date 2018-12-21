@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ProgressBar
+        android:id="@+id/pbLoading"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:layout_centerInParent="true"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/btnUnSelect"
+        android:layout_width="146dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="21dp"
+        android:layout_marginEnd="13dp"
+        android:text="@string/UnSelect" />
+
+    <LinearLayout
+        android:id="@+id/LL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:minWidth="50dp"
+                android:text="@string/city"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <AutoCompleteTextView
+                android:id="@+id/etCity"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:completionThreshold="2" />
+        </LinearLayout>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checkedButton="@+id/rbTempInC"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbTempInC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/celsius"
+                android:textAlignment="textStart"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/rbTempInF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/fahrenheit"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/rbTempInKelvin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/kelvin"
+                android:textSize="16sp" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnGetWeather"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/get_weather" />
+
+    </LinearLayout>
+</RelativeLayout>
